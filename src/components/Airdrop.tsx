@@ -52,7 +52,11 @@ const Airdrop = () => {
                 />
             </div>
             {error && <p className="text-red-500 mb-2">{error}</p>}
-            {success && <p className="text-green-500 mb-2">{success}</p>}
+            {success && (
+                <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg shadow-sm">
+                    <p className="text-green-600 font-bold">{success}</p>
+                </div>
+            )}
             <button
                 onClick={sendAirdropToUser}
                 disabled={loading}
