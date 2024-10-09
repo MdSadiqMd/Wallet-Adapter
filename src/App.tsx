@@ -12,6 +12,7 @@ import { Buffer } from 'buffer';
 
 import Airdrop from './components/Airdrop';
 import { SendTokens } from './components/SendTokens';
+import { ShowSolBalance } from './components/ShowSolBalance';
 
 window.Buffer = Buffer;
 
@@ -34,6 +35,7 @@ function App() {
 						</div>
 						<Airdrop />
 						<SendTokens />
+						<ShowSolBalance />
 					</WalletModalProvider>
 				</WalletProvider>
 			</ConnectionProvider>
