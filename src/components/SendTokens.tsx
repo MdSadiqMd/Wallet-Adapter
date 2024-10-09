@@ -2,7 +2,7 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 import { useState } from "react";
 
-export function SendTokens() {
+function SendTokens() {
     const wallet = useWallet();
     const { connection } = useConnection();
 
@@ -93,3 +93,5 @@ export function SendTokens() {
         </div>
     );
 }
+
+export default SendTokens;
