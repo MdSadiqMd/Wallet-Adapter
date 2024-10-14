@@ -27,17 +27,17 @@ const App: React.FC = () => {
                             <WalletDisconnectButton className="wallet-button bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md" />
                         </header>
 
-                        <main className="app-main p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-                            <div className="card bg-white p-6 shadow-lg rounded-lg">
+                        <main className="app-main p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                            <div className="bg-white p-6 shadow-lg rounded-lg">
                                 <SendTokens />
                             </div>
-                            <div className="card bg-white p-6 shadow-lg rounded-lg">
-                                <ShowSolBalance />
-                            </div>
-                            <div className="card bg-white p-6 shadow-lg rounded-lg">
+                            <div className="bg-white p-6 shadow-lg rounded-lg">
                                 <Airdrop />
                             </div>
-                            <div className="card bg-white p-6 shadow-lg rounded-lg">
+                            <div className="bg-white p-6 shadow-lg rounded-lg">
+                                <ShowSolBalance />
+                            </div>
+                            <div className="bg-white p-6 shadow-lg rounded-lg">
                                 <SignMessage />
                             </div>
                         </main>
